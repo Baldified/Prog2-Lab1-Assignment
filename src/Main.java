@@ -24,5 +24,11 @@ public class Main {
 //        if (n >= QuestionOne.minHeights && n <= QuestionOne.maxHeights)
 //            QuestionOne.height = new int[n];
 
+
+        int[] arr = new int[]{1, 8, 6, 2, 5, 4, 8, 3, 7}; // Choose your array
+
+        if (arr.length >= Utils.minHeights && arr.length <= Utils.maxHeights) { // Constraints
+            System.out.println("Biggest area of water is: " + Utils.findMaxContainer(arr));
+        }
     }
 }
