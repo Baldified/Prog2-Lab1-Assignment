@@ -29,5 +29,7 @@ public class Main {
 
             System.out.println("Biggest area of water is: " + Utils.findMaxContainer(arr));
 
+            System.out.println("Three sum closest is " + Utils.findClosestSum(arr, 14));
+
     }
 }

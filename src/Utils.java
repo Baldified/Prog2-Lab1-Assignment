@@ -12,9 +12,8 @@ public class Utils {
                     int height = Math.min(arr[h], arr[w]);
                     int currentContainer = height * (w - h);
 
-                    if (currentContainer > maxContainer) {
+                    if (currentContainer > maxContainer)
                         maxContainer = currentContainer;
-                    }
                 }
             }
         }
@@ -38,16 +37,13 @@ public class Utils {
                 for (int n3 = 0; n3 < arr.length; n3++) {
                     if (n1 != n2 && n1 != n3 && n2 != n3) {
                         int sum = arr[n1] + arr[n2] + arr[n3];
-                        if ((target - sum) < diffSum) {
-
+                        if (Math.abs(target - sum) < diffSum) {
+                            diffSum = Math.abs(target - sum);
+                            closestSum = sum;
                         }
-
                     }
-
-
                 }
             }
-
         }
         return closestSum;
     }
